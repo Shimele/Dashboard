@@ -9,10 +9,10 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/charts.css/dist/charts.min.css"
-    />
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
   </head>
   <body>
     <div class="container">
@@ -171,11 +171,26 @@
               <p>Network Activities Graph</p>
               <div calender></div>
             </div>
-            <div class="statistique"></div>
+            <div class="statistique">
+              <div class="long-graph">
+                <figure class="highcharts-figure">
+                  <div id="container">graph</div>
+                </figure>
+              </div>
+              <div class="short-graph">
+                <h2>Short Graph</h2>
+              </div>
+            </div>
           </div>
-          <div class="dashboard-graphs"></div>
+          <div class="dashboard-graphs">
+            <p>for graph section</p>
+            <p>for graph section</p>
+            <p>for graph section</p>
+          </div>
         </div>
       </div>
     </div>
+
+    <script src="styles/scripts/longGraph.js"></script>
   </body>
 </html>

@@ -63,7 +63,7 @@
     height: 2rem;
     background-color: #09121a;
     padding: 5% 0 0 5%;
-    margin-top: 5.8rem;
+    margin-top: 300px;
   }
   .container div[class=side-bar-container] div[class=side-bar-footer] a {
     text-decoration: none;
@@ -87,7 +87,7 @@
   .container div[class=dashboard-container] div[class=dashboard] {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 12vh 33vh 45vh;
+    grid-template-rows: auto;
     grid-template-areas: "dashboard-figures" "dashboard-statistique" "dashboard-graphs";
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] {
@@ -183,12 +183,56 @@
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] {
     grid-area: "statistique";
-    display: flex;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "long-graph short-graph";
   }
-  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[id=area-example-1] {
-    height: 200px;
-    max-width: 400px;
-    margin: 0 auto;
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=short-graph] {
+    grid-area: "short-graph";
+    border: 1px solid yellow;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] {
+    grid-area: "long-graph";
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] #container {
+    height: 400px;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-figure,
+.container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-data-table table {
+    min-width: 310px;
+    max-width: 800px;
+    margin: 1em auto;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-data-table td,
+.container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-data-table th,
+.container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-data-table caption {
+    padding: 0.5em;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-data-table thead tr,
+.container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-data-table tr:hover {
+    background: #f1f7ff;
   }
 }
 @media screen and (min-width: 426px) {
