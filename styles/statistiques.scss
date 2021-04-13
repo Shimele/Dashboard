@@ -1,0 +1,24 @@
+div[class="dashboard-statistique"] {
+  background-color: white;
+  div[class="network-activities"] {
+    padding-top: 0.8rem;
+    grid-area: "network-activities";
+    border: 1px solid black;
+  }
+  div[class="statistique"] {
+    grid-area: "statistique";
+    display: flex;
+    div[id="area-example-1"] {
+      height: 200px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 5vh 95vh;
+  grid-template-areas:
+    "network-activities"
+    "statistique";
+}

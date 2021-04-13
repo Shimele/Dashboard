@@ -63,7 +63,7 @@
     height: 2rem;
     background-color: #09121a;
     padding: 5% 0 0 5%;
-    margin-top: 6rem;
+    margin-top: 5.8rem;
   }
   .container div[class=side-bar-container] div[class=side-bar-footer] a {
     text-decoration: none;
@@ -87,7 +87,7 @@
   .container div[class=dashboard-container] div[class=dashboard] {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 15vh 30vh 45vh;
+    grid-template-rows: 12vh 33vh 45vh;
     grid-template-areas: "dashboard-figures" "dashboard-statistique" "dashboard-graphs";
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] {
@@ -101,5 +101,119 @@
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-graphs] {
     grid-template-areas: "dashboard-graphs";
     border: 1px solid green;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] {
+    padding: 0.7rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(16.666%);
+    grid-template-areas: "figure-one figure-two figure-three figure-four figure-five figure-six";
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] h2 {
+    color: #293f54;
+    margin-left: 1rem;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-one] {
+    grid-area: figure-one;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-one] h2 {
+    color: #293f54;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-one] span[class=total-users] {
+    display: flex;
+    flex-direction: column;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-one] div[class=percent] {
+    display: flex;
+    flex-direction: column;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-one] div[class=percent] i {
+    color: green !important;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-one] div[class=border-right] {
+    border-right: 1px solid red;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-two] {
+    border-right: 1px solid red;
+    grid-area: figure-two;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-two] span[class=average-time] {
+    display: flex;
+    flex-direction: column;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-three] {
+    grid-area: figure-three;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-three] span[class=total-males] {
+    display: flex;
+    flex-direction: column;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-four] {
+    grid-area: figure-four;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-four] span[class=total-females] {
+    display: flex;
+    flex-direction: column;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-five] {
+    grid-area: figure-five;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-five] span[class=total-collection] {
+    display: flex;
+    flex-direction: column;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-six] {
+    grid-area: figure-six;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-six] span[class=total-connection] {
+    display: flex;
+    flex-direction: column;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] {
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5vh 95vh;
+    grid-template-areas: "network-activities" "statistique";
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=network-activities] {
+    padding-top: 0.8rem;
+    grid-area: "network-activities";
+    border: 1px solid black;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] {
+    grid-area: "statistique";
+    display: flex;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[id=area-example-1] {
+    height: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 426px) {
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-one] {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-two] {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-three] {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-four] {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-five] {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-six] {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
   }
 }

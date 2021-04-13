@@ -14,7 +14,7 @@ div[class="dashboard-container"] {
   div[class="dashboard"] {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 15vh 30vh 45vh;
+    grid-template-rows: 12vh 33vh 45vh;
     grid-template-areas:
       "dashboard-figures"
       "dashboard-statistique"
@@ -31,5 +31,7 @@ div[class="dashboard-container"] {
       grid-template-areas: "dashboard-graphs";
       border: 1px solid green;
     }
+    @import "figures.scss";
+    @import "statistiques.scss";
   }
 }
