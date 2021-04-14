@@ -70,7 +70,7 @@
     height: 2rem;
     background-color: #09121a;
     padding: 5% 0 0 5%;
-    margin-top: 300px;
+    margin-top: 343px;
   }
   .container div[class=side-bar-container] div[class=side-bar-footer] a {
     text-decoration: none;
@@ -90,7 +90,9 @@
   .container div[class=dashboard-container] div[class=tittle] {
     text-align: center;
     background-color: #ededed;
+    color: #293f54;
     height: 35px;
+    padding: 1rem;
   }
   .container div[class=dashboard-container] div[class=dashboard] {
     display: grid;
@@ -103,7 +105,6 @@
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] {
     grid-template-areas: "dashboard-statistique";
-    border: 1px solid blue;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-graphs] {
     grid-template-areas: "dashboard-graphs";
@@ -111,9 +112,11 @@
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] {
     padding: 0.7rem;
+    margin-bottom: 1rem;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(16.666%);
+    grid-gap: 1rem;
     grid-template-areas: "figure-one figure-two figure-three figure-four figure-five figure-six";
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] h2 {
@@ -121,8 +124,9 @@
     margin-left: 1rem;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span {
-    border-right: 1px solid #797777;
-    padding-left: 1rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    box-shadow: 0 0px 10px 2px #ddd;
+    background-color: #ffffff;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-one] {
     grid-area: figure-one;
@@ -181,16 +185,19 @@
     flex-direction: column;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] {
-    background-color: white;
+    background-color: #f7f7f7;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 5vh 95vh;
     grid-template-areas: "network-activities" "statistique";
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=network-activities] {
+    background-color: #ffffff;
     padding-top: 0.8rem;
     grid-area: "network-activities";
-    border: 1px solid black;
+    box-shadow: 0 0px 10px 2px #ddd;
+    padding-left: 2rem;
+    margin-left: 1rem;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] {
     grid-area: "statistique";
@@ -199,10 +206,15 @@
     grid-template-columns: 75% 25%;
     grid-template-rows: auto;
     grid-template-areas: "long-graph short-graph";
+    grid-column-gap: 10px;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=short-graph] {
     grid-area: "short-graph";
+    box-shadow: 0 0px 10px 2px #ddd;
     border: 1px solid yellow;
+    margin-top: 1rem;
+    height: 400px;
+    background-color: #ffffff;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] {
     grid-area: "long-graph";
@@ -210,6 +222,7 @@
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] #container {
     height: 400px;
+    box-shadow: 0 0px 10px 2px #ddd;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-figure,
 .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] .highcharts-data-table table {
@@ -255,22 +268,22 @@
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-two] {
     -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    -ms-grid-column: 3;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-three] {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 5;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-four] {
     -ms-grid-row: 1;
-    -ms-grid-column: 4;
+    -ms-grid-column: 7;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-five] {
     -ms-grid-row: 1;
-    -ms-grid-column: 5;
+    -ms-grid-column: 9;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] div[class=figure-six] {
     -ms-grid-row: 1;
-    -ms-grid-column: 6;
+    -ms-grid-column: 11;
   }
 }

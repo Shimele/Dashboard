@@ -1,22 +1,30 @@
 div[class="dashboard-statistique"] {
-  background-color: white;
+  background-color: #f7f7f7;
   div[class="network-activities"] {
+    background-color: #ffffff;
     padding-top: 0.8rem;
     grid-area: "network-activities";
-    border: 1px solid black;
+    box-shadow: 0 0px 10px 2px #ddd;
+    padding-left: 2rem;
+    margin-left: 1rem;
   }
   div[class="statistique"] {
     grid-area: "statistique";
 
     div[class="short-graph"] {
       grid-area: "short-graph";
+      box-shadow: 0 0px 10px 2px #ddd;
       border: 1px solid yellow;
+      margin-top: 1rem;
+      height: 400px;
+      background-color: #ffffff;
     }
     /* begining long graph section*/
     div[class="long-graph"] {
       grid-area: "long-graph";
       #container {
         height: 400px;
+        box-shadow: 0 0px 10px 2px #ddd;
       }
 
       .highcharts-figure,
@@ -62,6 +70,7 @@ div[class="dashboard-statistique"] {
     grid-template-columns: 75% 25%;
     grid-template-rows: auto;
     grid-template-areas: "long-graph short-graph";
+    grid-column-gap: 10px;
   }
 
   display: grid;
