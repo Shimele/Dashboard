@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@ div[class="dashboard-container"] {
   margin-top: 0;
   padding: 0;
   background-color: #f7f7f7;
+  font-family: "Raleway", sans-serif;
   div[class="tittle"] {
     text-align: center;
     background-color: #ededed;
