@@ -1,5 +1,9 @@
 @media screen and (min-width: 426px) {
   .container {
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: auto;
@@ -92,7 +96,6 @@
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] {
     grid-template-areas: "dashboard-figures";
-    border: 1px solid red;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] {
     grid-template-areas: "dashboard-statistique";
@@ -112,6 +115,10 @@
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] h2 {
     color: #293f54;
     margin-left: 1rem;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span {
+    border-right: 1px solid #797777;
+    padding-left: 1rem;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-one] {
     grid-area: figure-one;
@@ -162,10 +169,10 @@
     display: flex;
     flex-direction: column;
   }
-  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-six] {
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] div[class=figure-six] {
     grid-area: figure-six;
   }
-  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-six] span[class=total-connection] {
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] div[class=figure-six] span[class=total-connection] {
     display: flex;
     flex-direction: column;
   }
@@ -183,6 +190,7 @@
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] {
     grid-area: "statistique";
+    /* begining long graph section*/
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: auto;
@@ -194,6 +202,7 @@
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] {
     grid-area: "long-graph";
+    /* end long graph section*/
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-statistique] div[class=statistique] div[class=long-graph] #container {
     height: 400px;
@@ -256,7 +265,7 @@
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
-  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-six] {
+  .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] div[class=figure-six] {
     -ms-grid-row: 1;
     -ms-grid-column: 6;
   }

@@ -12,7 +12,7 @@ div[class="dashboard-statistique"] {
       grid-area: "short-graph";
       border: 1px solid yellow;
     }
-
+    /* begining long graph section*/
     div[class="long-graph"] {
       grid-area: "long-graph";
       #container {
@@ -56,6 +56,7 @@ div[class="dashboard-statistique"] {
       .highcharts-data-table tr:hover {
         background: #f1f7ff;
       }
+      /* end long graph section*/
     }
     display: grid;
     grid-template-columns: 75% 25%;
