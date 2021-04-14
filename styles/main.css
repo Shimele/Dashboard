@@ -127,6 +127,7 @@
     padding: 1rem 0.5rem 1rem 0.5rem;
     box-shadow: 0 0px 10px 2px #ddd;
     background-color: #ffffff;
+    border-radius: 20px;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] span[class=figure-one] {
     grid-area: figure-one;
