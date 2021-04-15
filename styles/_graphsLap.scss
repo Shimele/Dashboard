@@ -30,7 +30,7 @@ div[class="dashboard-graphs"] {
   }
 
   display: grid;
-  grid-template-columns: repeat(3, 30%);
+  grid-template-columns: repeat(3, 32.333%);
   grid-template-rows: auto auto;
   grid-template-areas:
     "upper-graph1 upper-graph2 upper-graph3"
