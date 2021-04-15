@@ -1,16 +1,19 @@
 div[class="dashboard-statistique"] {
+  grid-template-areas: "dashboard-statistique";
   background-color: #f7f7f7;
+
   div[class="network-activities"] {
-    background-color: #ffffff;
-    padding-top: 0.8rem;
+    background-color: #293f54;
+    color: white;
+    padding: 0.8rem;
     grid-area: "network-activities";
     box-shadow: 0 0px 10px 2px #ddd;
-    padding-left: 2rem;
     margin-left: 1rem;
   }
   div[class="statistique"] {
     grid-area: "statistique";
 
+    /* begining short graph section*/
     div[class="short-graph"] {
       grid-area: "short-graph";
       box-shadow: 0 0px 10px 2px #ddd;
@@ -23,7 +26,7 @@ div[class="dashboard-statistique"] {
     div[class="long-graph"] {
       grid-area: "long-graph";
       #container {
-        height: 400px;
+        height: auto;
         box-shadow: 0 0px 10px 2px #ddd;
       }
 
@@ -70,7 +73,7 @@ div[class="dashboard-statistique"] {
     grid-template-columns: 75% 25%;
     grid-template-rows: auto;
     grid-template-areas: "long-graph short-graph";
-    grid-column-gap: 10px;
+    grid-column-gap: 8px;
   }
 
   display: grid;

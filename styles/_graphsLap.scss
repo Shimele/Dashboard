@@ -1,0 +1,34 @@
+div[class="dashboard-graphs"] {
+  grid-template-areas: "dashboard-graphs";
+  height: auto;
+  border: 1px solid red;
+  div {
+    border: 1px solid green;
+  }
+
+  div[class="upper-graph1"] {
+    grid-area: "upper-graph1";
+  }
+  div[class="upper-graph2"] {
+    grid-area: "upper-graph2";
+  }
+  div[class="upper-graph3"] {
+    grid-area: "upper-graph3";
+  }
+  div[class="lower-graph1"] {
+    grid-area: "lower-graph1";
+  }
+  div[class="lower-graph2"] {
+    grid-area: "lower-graph2";
+  }
+  div[class="lower-graph3"] {
+    grid-area: "lower-graph3";
+  }
+
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "upper-graph1 upper-graph2 upper-graph3"
+    "lower-graph1 lower-graph2 lower-graph3";
+}

@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
 div[class="side-bar-container"] {
+  position: fixed;
+  top: 0;
+  height: 100vh;
   background-color: #293f54;
   color: white;
   font-family: "Raleway", sans-serif;
+
   div[class="top-menu"] {
     padding-left: 5%;
     margin-bottom: 1rem;
@@ -41,6 +45,7 @@ div[class="side-bar-container"] {
     padding-left: 5%;
     h3 {
       margin-top: 1rem;
+      color: rgb(84, 117, 6);
     }
     span {
       a {
@@ -58,9 +63,13 @@ div[class="side-bar-container"] {
   }
   div[class="side-bar-footer"] {
     height: 2rem;
+    width: 95%;
     background-color: #09121a;
     padding: 5% 0 0 5%;
-    margin-top: 343px;
+    //stick footer to the bottom
+    position: absolute;
+    bottom: 0px;
+
     a {
       text-decoration: none;
       color: gray;
