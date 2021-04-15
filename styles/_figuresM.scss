@@ -1,0 +1,79 @@
+div[class="dashboard-figures"] {
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+
+  h2 {
+    color: #293f54;
+    margin-left: 1rem;
+  }
+  span {
+    padding: 0.5rem;
+    box-shadow: 0 0px 10px 2px #ddd;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  span[class="figure-one"] {
+    h2 {
+      color: #293f54;
+    }
+    grid-area: figure-one;
+    span[class="total-users"] {
+      display: flex;
+      flex-direction: column;
+    }
+    div[class="percent"] {
+      display: flex;
+      flex-direction: column;
+      i {
+        color: green !important;
+      }
+    }
+    div[class="border-right"] {
+      border-right: 1px solid red;
+    }
+  }
+  span[class="figure-two"] {
+    border-right: 1px solid red;
+    grid-area: figure-two;
+    span[class="average-time"] {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  span[class="figure-three"] {
+    grid-area: figure-three;
+    span[class="total-males"] {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  span[class="figure-four"] {
+    grid-area: figure-four;
+    span[class="total-females"] {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  span[class="figure-five"] {
+    grid-area: figure-five;
+    span[class="total-collection"] {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  div[class="figure-six"] {
+    grid-area: figure-six;
+    span[class="total-connection"] {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "figure-one figure-two"
+    "figure-three figure-four" "figure-five figure-six";
+}

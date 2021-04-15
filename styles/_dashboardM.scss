@@ -6,7 +6,6 @@
 }
 div[class="dashboard-container"] {
   margin-top: 0;
-  margin-left: 11.5rem; //to compensate for fixed side bar
   padding: 0;
   background-color: #f7f7f7;
   font-family: "Raleway", sans-serif;
@@ -20,7 +19,7 @@ div[class="dashboard-container"] {
   div[class="dashboard"] {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
       "dashboard-figures"
       "dashboard-statistique"
@@ -29,12 +28,11 @@ div[class="dashboard-container"] {
       grid-template-areas: "dashboard-figures";
     }
     div[class="dashboard-statistique"] {
-      border: 1px solid pink;
     }
     div[class="dashboard-graphs"] {
     }
-    @import "statistiquesLap";
-    @import "graphsLap";
-    @import "figuresLap";
+    @import "figuresM";
+    @import "statistiquesM";
+    @import "graphsM";
   }
 }

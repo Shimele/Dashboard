@@ -1,7 +1,7 @@
 div[class="dashboard-statistique"] {
   grid-template-areas: "dashboard-statistique";
   background-color: #f7f7f7;
-  height: 32rem;
+  height: 29rem;
 
   div[class="network-activities"] {
     background-color: #293f54;
@@ -10,7 +10,7 @@ div[class="dashboard-statistique"] {
     grid-area: "network-activities";
     box-shadow: 0 0px 10px 2px #ddd;
     margin-left: 1rem;
-    max-width: 100%;
+    max-width: 85%;
   }
   div[class="statistique"] {
     grid-area: "statistique";
@@ -72,10 +72,10 @@ div[class="dashboard-statistique"] {
       /* end long graph section*/
     }
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "long-graph short-graph";
-    grid-column-gap: 8px;
+    grid-template-areas: "long-graph" "short-graph";
+    grid-gap: 3px;
   }
 
   display: grid;

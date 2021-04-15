@@ -1,12 +1,7 @@
-//tablet
-@media screen and (min-width: 426px) {
-  @import "tabletStyles";
+div[class="side-bar-container"] {
+  display: none;
 }
-
-//laptop
-@media screen and (min-width: 769px) {
-  @import "laptopStyles";
-}
+@import "dashboardM";
 //large laptop
 //@media screen and (min-width: 1025px) {
 //@import "largeLaptopStyles";
@@ -16,3 +11,16 @@
 //@media screen and (min-width: 1440px) {
 //@import "cinemaTvStyles";
 //}
+
+//laptop
+@media screen and (min-width: 769px) {
+  @import "laptopStyles";
+}
+//tablet
+@media screen and (min-width: 426px) {
+  @import "tabletStyles";
+}
+//mobile
+@media screen and (max-width: 600px) {
+  @import "tabletStyles";
+}
