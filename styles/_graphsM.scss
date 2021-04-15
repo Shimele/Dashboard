@@ -6,6 +6,8 @@ div[class="dashboard-graphs"] {
 
   div {
     border: 1px solid green;
+    height: auto;
+    box-shadow: 0 0px 10px 2px #ddd;
   }
 
   div[class="upper-graph1"] {
@@ -33,4 +35,5 @@ div[class="dashboard-graphs"] {
   grid-template-areas:
     "upper-graph1" "upper-graph2" "upper-graph3"
     "lower-graph1" "lower-graph2" "lower-graph3";
+  grid-gap: 1rem;
 }
