@@ -75,7 +75,6 @@ div[class="dashboard-statistique"] {
     grid-template-columns: 75% 25%;
     grid-template-rows: auto;
     grid-template-areas: "long-graph short-graph";
-    grid-column-gap: 1.5px;
   }
 
   display: grid;
