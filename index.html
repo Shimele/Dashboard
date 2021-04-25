@@ -9,14 +9,25 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!--graph scripts -->
+    <!--graph scripts -->
+
     <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
   </head>
   <body>
     <div class="container">
-      <! --Begining sidebar section -->
+      <!--Begining sidebar section -->
       <div class="side-bar-container">
         <div class="top-menu">
           <h2>Dashbord Menu</h2>
@@ -83,13 +94,13 @@
             </a>
           </span>
         </div>
-        <! --side bar footer -->
+        <!--side bar footer -->
         <div class="side-bar-footer">
           <a href="#"><i class="fas fa-cogs"></i></a>
           <a href="#"><i class="fas fa-compress-arrows-alt"></i></a>
           <a href="#"><i class="fas fa-power-off"></i></a>
         </div>
-        <! --end sidebar section -->
+        <!--end sidebar section -->
       </div>
 
       <!--Begining dashboard section -->
@@ -189,18 +200,77 @@
                 <!-- end long graph area-->
               </div>
               <div class="short-graph">
-                <h2>Short Graph</h2>
+                <figure class="highcharts-figure">
+                  <div id="container7"></div>
+                  </p>
+                </figure>
               </div>
             </div>
           </div>
           <!--begining section for other graphs -->
           <div class="dashboard-graphs">
-            <div class="upper-graph upper-graph1">upper graph 1</div>
-            <div class="upper-graph upper-graph2">upper graph 2</div>
-            <div class="upper-graph upper-graph3">upper graph 3</div>
-            <div class="lower-graph lower-graph1">lower graph 1</div>
-            <div class="lower-graph lower-graph2">lower graph 2</div>
-            <div class="lower-graph lower-graph3">lower graph 3</div>
+            <div class="upper-graphs">
+              <div class="upper-graph upper-graph1">
+                <div class="graph-1">
+                  <figure class="highcharts-figure">
+                    <div id="container2"></div>
+                  </figure>
+                </div>
+              </div>
+              <div class="upper-graph upper-graph2">
+                <div class="graph-2">
+                  <figure class="highcharts-figure">
+                    <div id="container3"></div>
+                  </figure>
+                </div>
+              </div>
+              <div class="upper-graph upper-graph3">
+                <div class="graph-3">
+                  <figure class="highcharts-figure">
+                    <div id="container4"></div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="lower-graphs">
+              <div class="lower-graph lower-graph1">
+                <figure class="highcharts-figure">
+                  <div id="container6"></div>
+                  <div class="ld-row">
+                    <label class="ld-label"> Enable Polling </label>
+                    <input
+                      type="checkbox"
+                      checked="checked"
+                      id="enablePolling"
+                    />
+                  </div>
+
+                  <div class="ld-row">
+                    <label class="ld-label"> Polling Time (Seconds) </label>
+                    <input
+                      class="ld-time-input"
+                      type="number"
+                      value="2"
+                      id="pollingTime"
+                    />
+                  </div>
+                  <div class="ld-row">
+                    <label class="ld-label"> CSV URL </label>
+                    <input class="ld-url-input" type="text" id="fetchURL" />
+                  </div>
+                </figure>
+              </div>
+              <div class="lower-graph lower-graph2">
+                <div class="buttons">
+                  <button id="2000">2000</button>
+                  <button id="2004">2004</button>
+                  <button id="2008">2008</button>
+                  <button id="2012">2012</button>
+                  <button id="2016" class="active">2016</button>
+                </div>
+                <div id="container5"></div>
+              </div>
+            </div>
           </div>
           <!-- end section other graphs -->
         </div>
@@ -208,5 +278,11 @@
     </div>
 
     <script src="scripts/longGraph.js"></script>
+    <script src="scripts/shortGraph.js"></script>
+    <script src="scripts/upperGraph1.js"></script>
+    <script src="scripts/upperGraph2.js"></script>
+    <script src="scripts/upperGraph3.js"></script>
+    <script src="scripts/lowerGraph1.js"></script>
+    <script src="scripts/lowerGraph2.js"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+// Create the 1st chart
 Highcharts.chart("container", {
   chart: {
     type: "areaspline",

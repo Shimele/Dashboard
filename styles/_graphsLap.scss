@@ -1,39 +1,267 @@
 div[class="dashboard-graphs"] {
-  justify-content: center;
   grid-template-areas: "dashboard-graphs";
-  height: auto;
   margin-top: 0;
-  border: 1px solid red;
   div {
-    border: 1px solid green;
-    height: auto;
-    box-shadow: 0 0px 10px 2px #ddd;
+    background-color: white;
+  }
+  div[class="upper-graphs"] {
+    justify-content: center;
+    margin-top: 0;
+
+    div[class="upper-graph1"] {
+      grid-area: "upper-graph1";
+      display: flex;
+      flex-direction: row;
+
+      div[class="graph-1"] {
+        .highcharts-figure,
+        .highcharts-data-table table {
+          min-width: 310px;
+          max-width: 800px;
+          margin: 1em auto;
+        }
+
+        #container {
+          height: 400px;
+        }
+
+        .highcharts-data-table table {
+          font-family: Verdana, sans-serif;
+          border-collapse: collapse;
+          border: 1px solid #ebebeb;
+          margin: 10px auto;
+          text-align: center;
+          width: 100%;
+          max-width: 500px;
+        }
+        .highcharts-data-table caption {
+          padding: 1em 0;
+          font-size: 1.2em;
+          color: #555;
+        }
+        .highcharts-data-table th {
+          font-weight: 600;
+          padding: 0.5em;
+        }
+        .highcharts-data-table td,
+        .highcharts-data-table th,
+        .highcharts-data-table caption {
+          padding: 0.5em;
+        }
+        .highcharts-data-table thead tr,
+        .highcharts-data-table tr:nth-child(even) {
+          background: #f8f8f8;
+        }
+        .highcharts-data-table tr:hover {
+          background: #f1f7ff;
+        }
+      }
+    }
+    div[class="upper-graph2"] {
+      grid-area: "upper-graph2";
+      div[class="graph-2"] {
+        .highcharts-figure,
+        .highcharts-data-table table {
+          min-width: 320px;
+          max-width: 660px;
+          margin: 1em auto;
+        }
+
+        .highcharts-data-table table {
+          font-family: Verdana, sans-serif;
+          border-collapse: collapse;
+          border: 1px solid #ebebeb;
+          margin: 10px auto;
+          text-align: center;
+          width: 100%;
+          max-width: 500px;
+        }
+        .highcharts-data-table caption {
+          padding: 1em 0;
+          font-size: 1.2em;
+          color: #555;
+        }
+        .highcharts-data-table th {
+          font-weight: 600;
+          padding: 0.5em;
+        }
+        .highcharts-data-table td,
+        .highcharts-data-table th,
+        .highcharts-data-table caption {
+          padding: 0.5em;
+        }
+        .highcharts-data-table thead tr,
+        .highcharts-data-table tr:nth-child(even) {
+          background: #f8f8f8;
+        }
+        .highcharts-data-table tr:hover {
+          background: #f1f7ff;
+        }
+      }
+    }
+    div[class="upper-graph3"] {
+      grid-area: "upper-graph3";
+      div[class="graph-3"] {
+        #container4 {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+
+        .highcharts-figure,
+        .highcharts-data-table table {
+          min-width: 380px;
+          max-width: 600px;
+          margin: 0 auto;
+        }
+
+        .highcharts-data-table table {
+          font-family: Verdana, sans-serif;
+          border-collapse: collapse;
+          border: 1px solid #ebebeb;
+          margin: 10px auto;
+          text-align: center;
+          width: 100%;
+          max-width: 500px;
+        }
+        .highcharts-data-table caption {
+          padding: 1em 0;
+          font-size: 1.2em;
+          color: #555;
+        }
+        .highcharts-data-table th {
+          font-weight: 600;
+          padding: 0.5em;
+        }
+        .highcharts-data-table td,
+        .highcharts-data-table th,
+        .highcharts-data-table caption {
+          padding: 0.5em;
+        }
+        .highcharts-data-table thead tr,
+        .highcharts-data-table tr:nth-child(even) {
+          background: #f8f8f8;
+        }
+        .highcharts-data-table tr:hover {
+          background: #f1f7ff;
+        }
+      }
+    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "upper-graph1 upper-graph2 upper-graph3";
+    grid-gap: 1rem;
   }
 
-  div[class="upper-graph1"] {
-    grid-area: "upper-graph1";
-  }
-  div[class="upper-graph2"] {
-    grid-area: "upper-graph2";
-  }
-  div[class="upper-graph3"] {
-    grid-area: "upper-graph3";
-  }
-  div[class="lower-graph1"] {
-    grid-area: "lower-graph1";
-  }
-  div[class="lower-graph2"] {
-    grid-area: "lower-graph2";
-  }
-  div[class="lower-graph3"] {
-    grid-area: "lower-graph3";
-  }
+  div[class="lower-graphs"] {
+    display: grid;
+    grid-template-columns: 32% 65.5%;
+    grid-template-areas: "lower-graph1 lower-graph2";
+    grid-gap: 1rem;
 
-  display: grid;
-  grid-template-columns: repeat(3, 32.333%);
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "upper-graph1 upper-graph2 upper-graph3"
-    "lower-graph1 lower-graph2 lower-graph3";
-  grid-gap: 1rem;
+    div[class="lower-graph1"] {
+      grid-area: "lower-graph1";
+      .highcharts-figure,
+      .highcharts-data-table table {
+        min-width: 360px;
+        max-width: 800px;
+        margin: 1em auto;
+      }
+
+      .highcharts-data-table table {
+        font-family: Verdana, sans-serif;
+        border-collapse: collapse;
+        border: 1px solid #ebebeb;
+        margin: 10px auto;
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+      }
+      .highcharts-data-table caption {
+        padding: 1em 0;
+        font-size: 1.2em;
+        color: #555;
+      }
+      .highcharts-data-table th {
+        font-weight: 600;
+        padding: 0.5em;
+      }
+      .highcharts-data-table td,
+      .highcharts-data-table th,
+      .highcharts-data-table caption {
+        padding: 0.5em;
+      }
+      .highcharts-data-table thead tr,
+      .highcharts-data-table tr:nth-child(even) {
+        background: #f8f8f8;
+      }
+      .highcharts-data-table tr:hover {
+        background: #f1f7ff;
+      }
+
+      .ld-label {
+        width: 200px;
+        display: inline-block;
+      }
+
+      .ld-url-input {
+        width: 500px;
+      }
+
+      .ld-time-input {
+        width: 40px;
+      }
+    }
+
+    div[class="lower-graph2"] {
+      grid-area: "lower-graph2";
+      #container5 {
+        min-width: 310px;
+        max-width: 800px;
+        height: 400px;
+        margin: 0 auto;
+      }
+
+      .buttons {
+        min-width: 310px;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 0;
+      }
+
+      .buttons button {
+        cursor: pointer;
+        border: 1px solid silver;
+        border-right-width: 0;
+        background-color: #f8f8f8;
+        font-size: 1rem;
+        padding: 0.5rem;
+        outline: none;
+        transition-duration: 0.3s;
+        margin: 0;
+      }
+
+      .buttons button:first-child {
+        border-top-left-radius: 0.3em;
+        border-bottom-left-radius: 0.3em;
+      }
+
+      .buttons button:last-child {
+        border-top-right-radius: 0.3em;
+        border-bottom-right-radius: 0.3em;
+        border-right-width: 1px;
+      }
+
+      .buttons button:hover {
+        color: white;
+        background-color: rgb(158, 159, 163);
+        outline: none;
+      }
+
+      .buttons button.active {
+        background-color: #0051b4;
+        color: white;
+      }
+    }
+  }
 }
