@@ -25,7 +25,8 @@ div[class="dashboard-container"] {
     grid-template-areas:
       "dashboard-figures"
       "dashboard-statistique"
-      "dashboard-graphs";
+      "dashboard-graphs"
+      "footer";
     div[class="dashboard-figures"] {
       grid-template-areas: "dashboard-figures";
     }
@@ -36,5 +37,6 @@ div[class="dashboard-container"] {
     @import "statistiquesLap";
     @import "graphsLap";
     @import "figuresLap";
+    @import "footer";
   }
 }

@@ -10,7 +10,7 @@
   }
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto;
   grid-template-areas: "side-bar-container dashboard-container";
   @import "side-barLap";
   @import "dashboardLap";

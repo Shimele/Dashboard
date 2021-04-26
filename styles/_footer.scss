@@ -1,0 +1,13 @@
+div[class="footer"] {
+  grid-area: "footer";
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  height: 50px;
+  background-color: #293f54;
+  color: #278b07;
+  font-weight: bolder;
+  span {
+    margin-left: 5rem;
+  }
+}

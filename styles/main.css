@@ -206,7 +206,6 @@ div[class=dashboard-container] div[class=dashboard] div[class=dashboard-graphs] 
   grid-template-areas: "dashboard-graphs";
   margin-top: 32rem;
   height: auto;
-  border: 1px solid red;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
@@ -244,7 +243,7 @@ div[class=dashboard-container] div[class=dashboard] div[class=dashboard-graphs] 
     margin: 0;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
     grid-template-areas: "side-bar-container dashboard-container";
     @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
@@ -346,7 +345,7 @@ div[class=dashboard-container] div[class=dashboard] div[class=dashboard-graphs] 
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "dashboard-figures" "dashboard-statistique" "dashboard-graphs";
+    grid-template-areas: "dashboard-figures" "dashboard-statistique" "dashboard-graphs" "footer";
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] {
     grid-template-areas: "dashboard-figures";
@@ -820,6 +819,19 @@ div[class=dashboard-container] div[class=dashboard] div[class=dashboard-graphs] 
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] div[class=figure-six] span[class=total-connection] {
     display: flex;
     flex-direction: column;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=footer] {
+    grid-area: "footer";
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    height: 50px;
+    background-color: #293f54;
+    color: #278b07;
+    font-weight: bolder;
+  }
+  .container div[class=dashboard-container] div[class=dashboard] div[class=footer] span {
+    margin-left: 5rem;
   }
   .container div[class=dashboard-container] div[class=dashboard] div[class=dashboard-figures] > span[class=figure-one] {
     -ms-grid-row: 1;
