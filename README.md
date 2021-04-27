@@ -10,7 +10,7 @@ https://shimele.github.io/Dashboard/
 
 ## Screenshot
 
-![alt text](https://github.com/Shimele/Dashboard/blob/main/dashboard.png)
+![alt text](https://github.com/Shimele/Dashboard/blob/main/dashboard.gif)
 
 ## Acknowledgements
 
